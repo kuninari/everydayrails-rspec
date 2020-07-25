@@ -5,6 +5,7 @@ RSpec.describe HomeController, type: :controller do
     it "responds successfully" do
       get :index
       expect(response).to be_success
+      # response はブラウザに返すべきアプリケーションの全データを保持しているオブジェクト
     end
   end
 
